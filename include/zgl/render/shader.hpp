@@ -17,7 +17,7 @@ namespace ZG
         FRAGMENT
     };
 
-    class Shader : public ResourceHandle<uint>
+    class Shader : public ResourceHandle<unsigned int>
     {
         public:
             Shader(ShaderType shaderType) : m_ShaderType(shaderType) {}
@@ -34,7 +34,7 @@ namespace ZG
 
     };
 
-    class ShaderProgram : public ResourceHandle<uint>
+    class ShaderProgram : public ResourceHandle<unsigned int>
     {
         public:
             ShaderProgram() = default;
